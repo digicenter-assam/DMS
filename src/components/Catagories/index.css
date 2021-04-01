@@ -13,8 +13,10 @@
   .catagories-bar {
       position: relative;
       background-color: #060b26;
-      
-      height: 58px ;
+     
+      padding-right: 1rem;
+      border-radius: 0 10px 10px  0;
+       height: 100%;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -22,12 +24,12 @@
       border-right: 55px solid #fff; */
   }
 
-  .triangle {
+  /* .triangle {
       width: 0;
       height: 0;;
       border-top: 58px solid white;
       border-left:58px solid transparent;
-  }
+  } */
 
   .catagories-desc{
       color: #fff;

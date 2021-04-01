@@ -50,7 +50,7 @@
   }
   
   .bestS_childBottom{
-    z-index: -1;
+    z-index: 1;
     background:url('http://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8Mnx8ZWFycGhvbmVzfHwwfHx8&ixlib=rb-1.2.1&q=80&w=1080');
     background-repeat: no-repeat;
     background-position: center;
@@ -180,12 +180,7 @@
       font-size: 1.8rem;
   }
   
-  @media screen and (max-width: 475px) {
-
-   .best-seller-wrapper {
-       display: none;
-   } 
-   
+  @media screen and (max-width: 375px) {
     .bestS_parent-heading-bold {
         font-size: 1rem;
         color: #ECECEC;
