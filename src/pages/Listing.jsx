@@ -14,7 +14,7 @@ const Listing = (props) => {
     useEffect( ()=>{
         db.ref(props.location.pathname.split("/")[2].toLowerCase()).on("value", snap => {
             setItems(Object.values(snap.val()));
-            console.log(Object.values(snap.val())[0]);
+            // console.log(Object.values(snap.val())[0]);
             setIsLoaded(true);
         })
     },[props])

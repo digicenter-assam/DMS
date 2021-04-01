@@ -1,13 +1,3 @@
-a{
-color: white;
-
-}
-
-a:hover{
-  color: wheat;
-  
-  }
-
 .footer_parent {
   background-color: #060b26;
   opacity: 1;
@@ -92,7 +82,7 @@ hr {
     display: none;
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 460px) {
     .responsive-footer {
         display: block;
         background-color: #060b26;

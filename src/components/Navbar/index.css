@@ -111,11 +111,11 @@
           }
         
           .Search-Bar {
-            margin-top: 11vh;
+            margin-top: 9vh;
             margin-bottom: 1.3rem;
             margin-left: -25%;
             /* margin-right: 5rem; */
-            width: 40%;
+            width: 50%;
             text-align: center;
           }
         
@@ -123,18 +123,37 @@
             width: 100%;
             /* padding-right: 100%; */
             padding: 12px 24px;
+            margin-top: -1vh;
             text-align: center;
           }
         
           .nav-wrapper {
             margin-top: -4rem;
-            /* font-size: -1rem; */
-            /* margin-left: 1rem; */
           }
         
           .Search-Bar input {
             width: 155%;
             height: 30px;
             text-align: center;
+          }
+
+          .profile img {
+            /* height: -.8vh; */
+            width: 15px;
+            height: 15px;
+          }
+
+          .profile {
+            margin-top: -2vh;
+          }
+
+          .wishlist {
+            margin-top: -2vh;
+            margin-right: .5rem;
+          }
+
+          .wishlist img {
+            width: 15px;
+            height: 15px;
           }
         }
