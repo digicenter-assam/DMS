@@ -68,9 +68,9 @@ function Homepagemenu() {
             <div className="menu-product-img-background">
 
               <div className="heartImgContainer">
-                {/* <img src={heart_img} className="heartImg" /> */}
-                {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
-                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> }
+                <img src={heart_img} className="heartImg" />
+                {/* {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
+                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> } */}
               </div>
 
               <div className="menu-product-img">
@@ -90,9 +90,9 @@ function Homepagemenu() {
           <div className="menu-product">
             <div className="menu-product-img-background">
               <div className="heartImgContainer">
-                {/* <img src={heart_img} className="heartImg" /> */}
-                {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
-                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> }
+                <img src={heart_img} className="heartImg" />
+                {/* {heart ? <img src={love_icon} className="loveImg" onClick={showHeart} /> 
+                        : <img src={heart_img} className="heartImg" onClick={showHeart} /> } */}
               </div>
               <div className="menu-product-img">
                 <img src={items[product_2 - 1].img} />

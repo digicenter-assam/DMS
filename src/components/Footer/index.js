@@ -1,6 +1,5 @@
 import React from "react";
 import "./FooterComponent.css";
-import { Link } from 'react-router-dom';
 
 export default function FooterComponent() {
   return (
@@ -10,12 +9,12 @@ export default function FooterComponent() {
         <div className="footer_child1">
           <p className="footer_child1_heading">Contact Info</p>
           <div className="contact-desc">
-            <p>Phone: +91 70022 80187</p>
+            <p>Phone: +4 (509) 120 6705</p>
 
             <p>
-              Address: DMNSE Office, <br></br>
-              Ganeshguri<br></br>
-              Guwahati
+              Address: 1418 Riverwood Drive, <br></br>
+              Suite 3245 Cottonwood,<br></br>
+              CA 96052, United State We accept:
             </p>
           </div>
         </div>
@@ -29,16 +28,14 @@ export default function FooterComponent() {
         </div>
         <div className="footer_child1">
           <p className="footer_child1_heading">Popular Categories</p>
-        
-          
-          <Link to="/searchListing/coat"><p>Coats</p></Link>
-          <Link to="/searchListing/jeans"><p>Jeans</p></Link>
-           <Link to="/searchListing/tops"><p>Tops</p></Link>
-           <Link to="/searchListing/sweaters"><p>Sweaters</p></Link>
-           <Link to="/searchListing/jackets"><p>Jackets</p></Link>
-           <Link to="/searchListing/bookcover"><p>Book Cover Printing</p></Link>
-           <Link to="/searchListing/brandprinting"><p>Brand Printing</p></Link>
-           <Link to="/searchListing/businesscard"><p>Business Card Printing</p></Link>
+          <p>Coats</p>
+          <p>Jeans</p>
+          <p>Tops</p>
+          <p>Sweaters</p>
+          <p>Jackets</p>
+          <p>Book Cover Printing</p>
+          <p>Brand Printing</p>
+          <p>Business Card Printing</p>
         </div>
         <div className="footer_child1">
           <p className="footer_child1_heading">Let's stay in touch</p>
