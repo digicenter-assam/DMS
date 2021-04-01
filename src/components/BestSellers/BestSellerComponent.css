@@ -1,0 +1,212 @@
+.bestS_parent-heading {
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+    margin-bottom: -5rem;
+    margin-top: 5rem;
+  }
+  
+  .bestS_parent-heading-bold {
+      font-size: 1.8rem;
+      color: #ECECEC;
+      margin-left: -1rem;
+      }
+  
+      .bestS_parent-heading p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #32436b;
+      display: flex;
+      align-items: center;
+      margin-top: -35px;
+      margin-left: 1rem;
+      line-height: 0 !important;
+      margin-bottom: 7vh;
+      }
+  
+      .bestS_parent-heading span {
+      margin-right: 0.5rem;
+      color: #32436b;
+      }
+      
+  .bestS_parent{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      height: 100%;
+      width: 100%;
+     
+  }
+  
+  .bestS_childBottom_parent{
+    display: flex;
+    width: 84%;
+    height: 55vh;
+    align-items: center;
+    justify-content:center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .bestS_childBottom{
+    z-index: 1;
+    background:url('http://images.unsplash.com/photo-1505740420928-5e560c06d30e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxzZWFyY2h8Mnx8ZWFycGhvbmVzfHwwfHx8&ixlib=rb-1.2.1&q=80&w=1080');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    background-color: aquamarine;
+    align-items: center;
+    justify-items: end;
+  }
+  
+  .bestS_childTop{
+     padding: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin: 0 auto;
+      position:absolute;
+      z-index: 1;
+      width: 270px;
+      height: 120px;
+      border: black;
+      border-width: 2px;
+      border-style: solid;
+  }
+  
+  .bestS_childTop_child{
+      width: 100%;
+      display: flex;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      align-items: center;    
+  }
+  
+  #bestS-sa{
+    margin-left: 8px;
+    width: 70%;
+    flex-basis: 1;
+    /* display: flex;
+    align-items: center; */
+  }
+
+  #bestS-le{
+      margin-right: 8px;
+      width: 70%;
+      
+     
+      flex-basis: 1;
+  }
+  
+  #bestS-sa p{
+      
+      background-color: black;
+      text-align: end;
+      color: white;
+  }
+  
+  .bestS_childTop_child p
+  {
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+     
+      height: 100px;
+      font-weight: bold;
+      font-size: 60px;
+  }
+  
+  #bestS-le p{
+      background-color: white;
+      
+      text-align: start;
+  }
+  
+  
+  .bestS_childBottom p{
+  
+      color: black;
+    
+  
+  }
+  
+  #bestS_headphone{
+      
+      display: flex;
+      justify-content: start;
+      
+  }
+  
+  #bestS_headphone p{
+      margin-left: -5rem;
+      margin-bottom: 5rem;
+      transform: rotate(270deg);
+      height: fit-content;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: start;
+  }
+  
+  
+  
+  #bestS_pccase{
+      
+    background-color: greenyellow;
+    display:flex;
+     float: right;
+     text-align: right;
+     align-content: flex-end;
+     justify-items: flex-end;
+     justify-content: flex-end;
+      
+  }
+  
+  #bestS_pccase p{
+      
+      margin-right: -4rem;
+      margin-top: 7rem;
+      transform: rotate(-90deg);
+      width: fit-content;
+      height: fit-content;
+      font-size: 1.8rem;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .bestS_parent-heading-bold {
+        font-size: 1rem;
+        color: #ECECEC;
+        margin-left: .3rem;
+    }
+
+    .bestS_parent-heading p {
+        font-size: .5rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -29px;
+        margin-left: -.7rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .bestS_childBottom_parent{
+        display: flex;
+        width: 84%;
+        height: 55vh;
+        align-items: center;
+        justify-content:center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+  }

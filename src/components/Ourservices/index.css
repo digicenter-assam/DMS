@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+.service {
+    /* margin-top:3rem; */
+    margin-top: -2rem;;
+}
+
+.service-heading {
+    width:80%;
+    margin: auto;
+}
+
+.service-heading-bold {
+    font-size: 1.8rem;
+    color: #ECECEC;
+}
+
+.service-heading p {
+    font-size: 1.3rem;
+    font-weight:bold;
+    color: #32436B;
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: 1.5rem;
+    margin-bottom: 1vh;
+    line-height: 0 !important;
+}
+
+.service-heading span{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    font-weight:bold;
+    
+}
+
+.service-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+}
+
+.div-top {
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+}
+
+.div-bottom {
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2rem;
+}
+
+.div-left {
+    display: flex; 
+    align-items: flex-end;
+    width: 45%;
+    height: 593px;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    /* background-color: red; */
+    background: url(../../assets/Living\ in\ colors.png) no-repeat center;
+    background-size: cover;
+}
+
+.div-right {
+    width: 90%;
+    /* background-color: aqua; */
+}
+
+.div-top-left {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+    height: 280px;
+    margin-right: 2rem;
+    background-image: url(../../assets/Packaging\ Materials.png);
+    background-size: cover;
+}
+
+.div-top-right {
+    display: flex;
+    align-items: flex-end;
+    width: 55%;
+    height: 280px;
+    background-image: url(../../assets/Printing\ Books.png);
+    background-size: cover;
+}
+
+.div-bottom-left {
+    display: flex;
+    align-items: flex-end;
+    width: 55%;
+    height: 280px;
+    margin-right: 2rem;
+    background-image: url(../../assets/Ideal\ Branding.png);
+    background-size: cover;
+}
+
+.div-bottom-right {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+    height: 280px;
+    background-image: url(../../assets/Brand\ Printing.png);
+    background-size: cover;
+}
+
+.service-dec {
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:90px;
+    background-color:#242A41;
+    opacity: 0.9;
+}
+
+.service-dec:hover {
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:200px;
+    background-color:#242A41;
+    opacity: 0.9;
+    transition:1s;
+}
+
+.service-dec p{
+    width: 100%;
+
+   color: antiquewhite;
+   font-family: 'Yusei Magic', sans-serif;
+}
+
+@media screen and (max-width: 385px) {
+    .service-heading {
+        margin-top: 3vh;
+    }
+
+    .service-heading-bold {
+        font-size: 1rem;
+        color: #ECECEC;
+    }
+  
+    .service-heading p {
+        font-size: .5rem;
+        font-weight:bold;
+        color: #32436B;
+        display: flex;
+        align-items: center;
+        margin-top: -29px; 
+        /* margin-left: -4.5rem; */
+         margin-bottom: 1vh;
+        line-height: 0 !important;
+    }
+
+    .service-wrapper {
+        /* display: flex; */
+    }
+
+    .div-left {
+        display: flex; 
+        align-items: flex-end;
+        width: 100%;
+        height: 293px;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        margin-right: -25rem;
+        /* background-color: red; */
+        background: url(../../assets/Living\ in\ colors.png) no-repeat center;
+        background-size: cover;
+    }
+
+    .div-right {
+        width: 90%;
+        /* height: 5vh; */
+        /* background-color: aqua; */
+    }
+    
+    .div-top-left {
+        display: flex;
+        align-items: flex-end;
+        width: 68%;
+        height: 200px;
+        margin-top: 50vh;
+        margin-right: 5rem;
+        margin-left: -3.9rem;
+        background-image: url(../../assets/Packaging\ Materials.png);
+        background-size: cover;
+    }
+
+    .div-top {
+        /* margin-bottom: -15vh; */
+        display: flex;
+
+    }
+    
+    .div-top-right {
+        display: flex;
+        align-items: flex-end;
+        width: 65%;
+        height: 200px;
+        margin-top: 50vh;
+        margin-right: -2.3rem;
+        margin-left: -3rem;
+        background-image: url(../../assets/Printing\ Books.png);
+        background-size: cover;
+    }
+
+    .div-bottom {
+        display: flex;
+    }
+    
+    .div-bottom-left {
+        display: flex;
+        align-items: flex-end;
+        width: 68%;
+        height: 200px;
+        margin-right: 5rem;
+        margin-left: -3.9rem;
+        background-image: url(../../assets/Ideal\ Branding.png);
+        background-size: cover;
+    }
+    
+    .div-bottom-right {
+        display: flex;
+        align-items: flex-end;
+        width: 65%;
+        height: 200px;
+        margin-right: -2.3rem;
+        margin-left: -3rem;
+        background-image: url(../../assets/Brand\ Printing.png);
+        background-size: cover;
+    }
+  }
+
+  /* .linkStyle {
+      width: 45%;
+ } */

@@ -1,0 +1,140 @@
+@use postcss-color-function;
+@use postcss-nested;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+@media only screen and (max-width:1250) {
+  body {
+    font-size: 12px;
+  }
+}
+.Navbar {
+    background-color: #fff;
+    height: 9vh;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: solid;
+    border-width: 0.1rem; */
+  }
+
+  .logo h2 {
+    color: #000 !important;
+    font-size: 2rem
+  }
+
+  .Search-Bar {
+   justify-self: center;
+   
+  }
+
+  .Search-Bar input {
+    width: 30rem;
+    height: 30px;
+  }
+
+  .menu-bars {
+  text-decoration: none;
+  }
+  .menu-bars div {
+    text-align: center;
+  }
+  .menu-bars p{
+    font-size: 0.6rem;
+  } 
+  .menu-bars img {
+    width: 1.3rem;
+  }
+  .nav-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+   
+  .search__input {
+        width: 100%;
+        padding: 12px 24px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: #575756;
+        background-color: transparent;
+/*      background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+ 
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+  }
+  .search__input::placeholder {
+            color: color(#575756 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .search__input:hover,
+        .search__input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+
+        @media screen and (max-width: 768px) {
+          .Navbar {
+            background-color: #fff;
+            height: 15vh;
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            /* border-bottom: solid;
+            border-width: 0.1rem; */
+          }    
+        
+          .logo {
+            margin-top: -6vh;
+          }
+
+          .logo h2 {
+            font-size: 1.5rem;
+          }
+        
+          .Search-Bar {
+            margin-top: 11vh;
+            margin-bottom: 1.3rem;
+            margin-left: -25%;
+            /* margin-right: 5rem; */
+            width: 40%;
+            text-align: center;
+          }
+        
+          .search__input {
+            width: 100%;
+            /* padding-right: 100%; */
+            padding: 12px 24px;
+            text-align: center;
+          }
+        
+          .nav-wrapper {
+            margin-top: -4rem;
+            /* font-size: -1rem; */
+            /* margin-left: 1rem; */
+          }
+        
+          .Search-Bar input {
+            width: 155%;
+            height: 30px;
+            text-align: center;
+          }
+        }
