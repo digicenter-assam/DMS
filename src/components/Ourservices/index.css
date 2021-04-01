@@ -143,7 +143,7 @@
    font-family: 'Yusei Magic', sans-serif;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 385px) {
     .service-heading {
         margin-top: 3vh;
     }

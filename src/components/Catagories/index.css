@@ -32,7 +32,6 @@
   .catagories-desc{
       color: #fff;
       margin-left: 1rem;
-      margin-top: -.9vh;
   }
   
   .display-catagories{
@@ -116,14 +115,6 @@
   span {
     margin-left: 16px;
   }
-
-@media screen and (max-width: 475px) {
-  .catagories-bar {
-    margin-top: -5vh;
-    height: 46px ;
-  }    
-}  
-
   
 @media screen and (max-width: 768px) {
   .display-catagories {

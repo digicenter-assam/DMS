@@ -185,7 +185,7 @@
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 375px) {
     .menu-product2 {
         width: 80%;
         margin: auto;

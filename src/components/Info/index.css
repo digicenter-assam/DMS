@@ -160,7 +160,7 @@
 
 .btnContactUs {
   border-radius: 6px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .btnContactUs {
@@ -259,16 +259,6 @@ hr {
   text-decoration: line-through;
 }
 
-.ownerinfo {
-  display: none;
-}
-
-.ownerinfo-active {
-  display: block;
-  font-size: 1.5rem;
-  /* color: #ef4343; */
-  /* font-weight:300 */
-}
 
 @media screen and (max-width: 760px) {
   .productMain_Right {
@@ -409,7 +399,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 360px) {
   .productMain_parent {
     display: block;
     /* text-align: center;
@@ -443,11 +433,6 @@ hr {
     margin-left: -.01rem;
   }
 
-  .bar1 {
-    margin-top: .8vh;
-    /* margin-left: 1rem; */
-  }
-
   .productMain-imgSmall {
     border: #242a41;
     border-style: solid;
@@ -467,22 +452,6 @@ hr {
   
   #comments {
     text-align: start;
-  }
-
-  .ownerinfo-active {
-    display: block;
-    font-size: 1.1rem;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    /* color: #ef4343; */
-    /* font-weight:300 */
-  }
-
-  .ownerInfo-div {
-    display: flex;
-    width: 95%;
-    height: auto;
-    /* margin-left: 5%; */
   }
   
 }

@@ -149,7 +149,7 @@
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 375px) {
   .shopbycategories-heading-bold {
     font-size: 1rem;
     color: #ECECEC;
