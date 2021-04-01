@@ -8,11 +8,18 @@ import img1 from '../../../assets/product1.png';
 
 export default function Card({name,img}) {
     const [heart, setHeart] = useState(false);
-    const showHeart = () => {
-        localStorage.
-        setHeart(!heart);
-        
+    const showHeart = () => setHeart(!heart);
+    
+    if (heart === true) {
+        console.log(heart);
+        console.log(name);
+
+        localStorage.setItem('image', img);
+        localStorage.setItem('name', name);
     }
+
+    console.log(localStorage.getItem('image'));
+    console.log(localStorage.getItem('name'));
 
     return (
         <div className='product-wrapper'>
@@ -22,7 +29,7 @@ export default function Card({name,img}) {
                        </div>
                        <div className='product-wishlist'>
                             <Link to='#' className='heart-btn'>
-                                {heart ? <FcIcons.FcLike onClick={showHeart} /> 
+                                { heart ? <FcIcons.FcLike onClick={showHeart} /> 
                                         : <FiIcons.FiHeart onClick={showHeart} /> }
                             </Link> 
                        </div>

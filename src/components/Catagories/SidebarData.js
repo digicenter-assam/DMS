@@ -18,7 +18,7 @@ export const SidebarData = [
   },
   {
     title: 'Electronics',
-    path: '/electronics',
+    path: '/listing/Printing Service',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },

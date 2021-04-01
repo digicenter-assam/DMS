@@ -12,20 +12,8 @@ const SearchListing = (props) => {
     const [isLoaded,setIsLoaded] = useState(false);
 
     useEffect( ()=>{
-        let arr=[];
-        db.ref('searchList/').orderByChild('term').startAt(props.location.pathname.split("/")[2]).endAt(`${props.location.pathname.split("/")[2]}\uf8ff`).once("value",snap=> {
-           // console.log(Object.values(snap.val())[0].category);
-            if(snap.val())
-            db.ref(`${Object.values(snap.val())[0].category}/`).orderByChild('term').startAt(props.location.pathname.split("/")[2]).endAt(`${props.location.pathname.split("/")[2]}\uf8ff`).once("value",data=> {
-                console.log(data.val());
-                arr=[... Object.values(data.val())];
-                // arr=arr.slice(1);
-                console.log(arr);
-                setItems(arr);
-            });
-            setIsLoaded(true); 
-        });
-        
+        db.ref('/').orderByChild('name').equalTo("Cap").once("value",snap=> {console.log(snap.val());});
+
     },[props])
 
     return(

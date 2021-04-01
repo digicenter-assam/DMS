@@ -183,7 +183,14 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
+
+    .menu-product {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+
     .menu-heading-bold {
         font-size: 1rem;
         color: #ECECEC;
