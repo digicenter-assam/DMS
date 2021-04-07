@@ -72,12 +72,16 @@ console.log(data);
       <div className="productMain_parent">
         <div class="productMain_left">
           <div className="productMain-img" id="productMain-il">
-            <SideBySideMagnifier
-              fillAvailableSpace={true}
-              imageSrc={currentImage}
-              imageAlt="Example"
-              largeImageSrc={currentZoomedImage} // Optional
-            />
+            { (window.innerWidth) > 450 ? 
+              <SideBySideMagnifier
+                fillAvailableSpace={true}
+                imageSrc={currentImage}
+                imageAlt="Example"
+                largeImageSrc={currentZoomedImage} // Optional
+              /> 
+              :
+              <img src={currentImage} />
+            }
           </div>
           <div className="productMain-divSmall">
             <img
