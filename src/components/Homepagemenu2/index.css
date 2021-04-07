@@ -1,0 +1,229 @@
+.menu2 {
+    width: 80%;
+    margin: auto;
+}
+
+.menu-heading2 {
+    background-color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.menu-heading-bold2 {
+    font-size: 1.8rem;
+    color: #ECECEC;
+}
+
+.menu-heading-bold2 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #32436b;
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: 1.5rem;
+    line-height: 0 !important;
+    margin-bottom: 7vh;
+}
+
+.menu-name-span2 {
+    margin-right: 0.5rem;
+}
+
+.menu-products2 {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    /* width: 100%; */
+    /* margin-left: 1px; */
+}
+
+.menu-product-img2 {
+    display: flex;
+    justify-content:center;
+    margin-left: 1rem;
+}
+
+.menu-product2 {
+    /* margin: auto; */
+    border-radius: 10px;
+    flex: 0 0 280px;
+    margin-bottom: 3rem;
+    width: 25%;
+    /* margin-left: 1%; */
+}
+
+.menu-view2 {
+    /* font-size: 600; */
+    /* font-weight: 600;
+    color: #32436b;
+    display: flex;
+    align-items: center;
+    margin-top: -6vh;
+
+    line-height: 0 !important;
+    margin-bottom: 4vh;
+    margin-left: 52%;
+    cursor: pointer;
+    border-bottom: 1px solid #32436b; */
+
+    font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -1rem;
+        margin-top: -4vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b;
+
+}
+
+.menu-product-name2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.manu-product-btn2 {
+    margin-top: 2rem; 
+    text-align: center;
+}
+
+.menu-btn2 {
+    font-weight: bold;
+    border: solid;
+    border:2px solid #EF4343;
+    border-radius: 5px;
+    color: #EF4343;
+    background-color: #fff;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.manu-product-btn2 {
+    margin-top: 2rem; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-btn2 {
+    font-weight: bold;
+    border: solid;
+    border:1px solid #EF4343;
+    
+    border-radius: 5px;
+    color: #EF4343;
+    background-color: #fff;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+.menu-btn2:hover {
+    background-color: #EF4343;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-heading-bold2 {
+        font-size: 1.3rem;
+        color: #ECECEC;
+    }
+    
+    .menu-heading-bold2 p {
+        font-size: .9rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: 1.5rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .menu-view2 {
+        /* font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -1rem;
+        margin-top: -9vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b; */
+
+        font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: -1rem;
+        margin-top: -4vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b;
+    }
+
+    .menu-view2 span {
+        margin-right: -1rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .menu-product2 {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+
+    .menu-heading-bold2 {
+        font-size: .6rem;
+        color: #ECECEC;
+    }
+    
+    .menu-heading-bold2 p {
+        font-size: .5rem;
+        font-weight: bold;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-top: -29px;
+        margin-left: -1.3rem;
+        line-height: 0 !important;
+        margin-bottom: 7vh;
+    }
+
+    .menu-view2 {
+        font-weight: 600;
+        font-size: .8rem;
+        color: #32436b;
+        display: flex;
+        align-items: center;
+        margin-left: 75%;
+        margin-right: -1rem;
+        margin-top: -20vh !important;
+        line-height: 0 !important;
+        cursor: pointer;
+        border-bottom: 1px solid #32436b;
+    }
+
+    .menu-view2 span {
+        margin-right: -1rem;
+    }
+}
