@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterComponent.css";
+import { Link } from "react-router-dom";
 
 export default function FooterComponent() {
   return (
@@ -27,14 +28,37 @@ export default function FooterComponent() {
           </div>
           <div className="footer_child1">
             <p className="footer_child1_heading">Popular Categories</p>
-            <p>Coats</p>
-            <p>Jeans</p>
-            <p>Tops</p>
-            <p>Sweaters</p>
-            <p>Jackets</p>
-            <p>Book Cover Printing</p>
-            <p>Brand Printing</p>
-            <p>Business Card Printing</p>
+            <Link  to="/searchListing/headphone">
+              <p className='footer-product'>Coats</p>
+            </Link>
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Jeans</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Tops</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Sweaters</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Jackets</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Book Cover Printing</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Brand Printing</p>
+            </Link>
+            
+            <Link  to="/searchListing/headphone">
+            <p className='footer-product'>Business Card Printing</p>
+            </Link>
+            
           </div>
           <div className="footer_child1">
             <p className="footer_child1_heading">Let's stay in touch</p>

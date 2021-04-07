@@ -43,6 +43,10 @@
   font-weight: bold;
 }
 
+.footer-product {
+  color: white;
+}
+
 hr {
   height: 2px;
   border-width: 0;
