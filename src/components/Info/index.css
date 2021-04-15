@@ -119,6 +119,7 @@
 
 .prc-4thLine {
   display: flex;
+  flex-wrap:wrap;
   margin-bottom: 2rem;
   margin-top: 3rem;
 }
@@ -151,10 +152,15 @@
 .ourPrice span {
   color: #43bb57;
 }
-
+.blueFont-div{
+  display:inline-block;
+  margin-right: 20%;
+  margin-bottom: 2rem;
+  /* column-gap: 4rem; */
+}
 .blueFont {
+  /* display: inline-block; */
   font-weight: 900;
-
   color: #3858a2;
 }
 

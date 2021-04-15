@@ -17,7 +17,7 @@ function Homepagemenu2() {
     const [isLoaded, setIsLoaded] = useState(false);
   
     useEffect(() => {
-      db.ref("hardware").on("value", (snap) => {
+      db.ref("sublimation tshirt").on("value", (snap) => {
         // snap.forEach((element, index) => {
         setItems(Object.values(snap.val()));
         console.log(Object.values(snap.val())[0]);
@@ -27,14 +27,14 @@ function Homepagemenu2() {
       });
     }, []);
   
-    let product_1 = 8; // here 1 is the id of the first product.
-    let product_2 = 13; // here 2 is the id of the second product.
-    let product_3 = 12; // here 3 is the id of the third product.
-    let product_4 = 4; // here 4 is the id of the forth product.
+    let product_1 = 1; // here 1 is the id of the first product. 8
+    let product_2 = 2; // here 2 is the id of the second product. 13
+    let product_3 = 3; // here 3 is the id of the third product. 13
+    let product_4 = 4; // here 4 is the id of the forth product. 4
 
     if (!isLoaded) return <div> <img src={loader} alt="Loading..." /> </div>;
 
-    console.log(items[product_3 - 1].name);
+    // console.log(items[product_3 - 1].name);
   
     return (
         <>
