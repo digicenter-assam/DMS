@@ -19,7 +19,7 @@ function Homepagemenu() {
   const showHeart = () => setHeart(!heart);
 
   useEffect(() => {
-    db.ref("printing service").on("value", (snap) => {
+    db.ref("momentos").on("value", (snap) => {
       setItems(Object.values(snap.val()));
       console.log(Object.values(snap.val())[0]);
       // console.log(Object.values(element.val()));
@@ -53,7 +53,7 @@ function Homepagemenu() {
           </div>
 
           <p className="menu-view">
-            <Link className="linkStyle" to="/listing/Printing Service">
+            <Link className="linkStyle" to="/listing/momentos">
               View All
             </Link>
             <span>
@@ -82,7 +82,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_1}`}>
+              <Link to={`/info/momentos/${product_1}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
@@ -103,7 +103,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_2}`}>
+              <Link to={`/info/momentos/${product_2}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
@@ -122,7 +122,7 @@ function Homepagemenu() {
               </div>
             </div>
             <div className="manu-product-btn">
-              <Link to={`/info/Printing Service/${product_3}`}>
+              <Link to={`/info/momentos/${product_3}`}>
                 <button className="menu-btn">VIEW NOW</button>
               </Link>
             </div>
