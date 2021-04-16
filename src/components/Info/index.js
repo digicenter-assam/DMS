@@ -14,7 +14,7 @@ import star_hollow from "../../star_hollow.svg";
 import star_filled from "../../star_filled.svg";
 import Relatedproduct from "../Relatedproduct";
 
-function Info({ data, isLoaded }) {
+function Info({ category, data, isLoaded }) {
   // window.scrollTo({ top: 0, behavior: "smooth" });
 
   const [currentImage, setCurrentImage] = useState("");
@@ -34,6 +34,7 @@ function Info({ data, isLoaded }) {
     {
         newArr.push(productDetailsKey[i]+" :  "+productDetailsValue[i]+ "");
     }
+    console.log(data);
     setproductDetails(newArr);
     setloading(true);
   }, [data])
@@ -42,11 +43,6 @@ function Info({ data, isLoaded }) {
   // let productDetails = Object.assign(productDetailsKey, productDetailsValue);
   // console.log(productDetails)
 
-  let product_category = data.category;
-  console.log(product_category);
-  let product_id = data.id;
-  console.log(product_id);
-  console.log(data.name);
 
   // let ownerInfo = 'ownerinfo';
   const [ownerInfo, setownerInfo] = useState("ownerinfo");
@@ -260,10 +256,10 @@ function Info({ data, isLoaded }) {
           </div>
         </div>
       </div>
-      {/* <Relatedproduct
-        product_category={product_category}
-        product_id={product_id}
-      /> */}
+      <Relatedproduct
+        product_category={category}
+        product_id={data.id}
+      />
     </>
   );
 }

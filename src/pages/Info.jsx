@@ -10,11 +10,13 @@ import { db } from '../config/firebase';
 const Info = (props) => {
     const [item,setItem] = useState({});
     const [isLoaded,setIsLoaded] = useState(false);
+    const [category, setCategory] = useState("");
 
     useEffect(()=>{
-        db.ref(`${props.location.pathname.split("/")[2].toLowerCase()}/${props.location.pathname.split("/")[3]}`).on("value", snap => {
+        let categoryV=props.location.pathname.split("/")[2].toLowerCase();
+        setCategory(categoryV);
+        db.ref(`${categoryV}/${props.location.pathname.split("/")[3]}`).on("value", snap => {
             setItem(snap.val());
-            console.log(snap.val());
             setIsLoaded(true);
         })
     },[props])
@@ -26,7 +28,7 @@ const Info = (props) => {
             <Catagories />
             </div>
             {/* <ImageSlider /> */}
-            <InfoComponent data={item} isLoaded={isLoaded} props={props}/>
+            <InfoComponent category={category} data={item} isLoaded={isLoaded} props={props}/>
             <FooterComponent />
         </>
     )
