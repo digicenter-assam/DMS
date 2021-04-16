@@ -14,7 +14,7 @@ function Navbar() {
         <>
             <div className="Navbar">
                 <div className="logo">
-                    <Link  to="/"><h2>DMSNE</h2></Link>
+                    <Link  to="/"><h2>D<span className='logo-style'>M</span>S</h2></Link>
                 </div>
                 <div className="Search-Bar">
                     <form onSubmit={(e)=>{e.preventDefault();window.location.replace(`/searchListing/${e.target[0].value}`);}}>

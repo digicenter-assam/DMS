@@ -7,7 +7,7 @@ import "./index.css";
 
 import paperCutterImg from "../../assets/paper cutter_min.jpg";
 import paperCutterImgZoomed from "../../assets/paper cutter1.jpg";
-import loader from '../../assets/loading-200px.gif';
+import loader from "../../assets/loading-200px.gif";
 
 import star_hollow from "../../star_hollow.svg";
 
@@ -15,15 +15,36 @@ import star_filled from "../../star_filled.svg";
 import Relatedproduct from "../Relatedproduct";
 
 function Info({ data, isLoaded }) {
- 
   // window.scrollTo({ top: 0, behavior: "smooth" });
 
   const [currentImage, setCurrentImage] = useState("");
   const [currentZoomedImage, setCurrentZoomedImage] = useState("");
+  const [productDetails, setproductDetails] = useState([]);
+  const [loading, setloading] = useState(false);
 
-  // setCurrentImage(data.img);
-  // console.log(currentImage);
-console.log(data);
+
+  // console.log(Object.keys(data.product_details));
+  // console.log(Object.values(data.product_details));
+    
+  useEffect(() => {
+    let productDetailsKey = Object.keys(data.product_details)
+    let productDetailsValue = Object.values(data.product_details)
+    let newArr = []
+    for(let i =0; i<productDetailsKey.length; i++)
+    {
+        newArr.push(productDetailsKey[i]+" :  "+productDetailsValue[i]+ "");
+    }
+    console.log(newArr)
+
+    setproductDetails(newArr);
+    console.log(data);
+    setloading(true);
+  }, [data])
+  
+  // console.log(productDetails)
+  // let productDetails = Object.assign(productDetailsKey, productDetailsValue);
+  // console.log(productDetails)
+
   let product_category = data.category;
   console.log(product_category);
   let product_id = data.id;
@@ -38,9 +59,8 @@ console.log(data);
     setownerInfo("ownerinfo-active");
     console.log("hello");
   };
-    // useEffect(() => {
-    // }, []);
-  
+  // useEffect(() => {
+  // }, []);
 
   useEffect(() => {
     setCurrentImage(data.img);
@@ -65,30 +85,36 @@ console.log(data);
 
     return x.concat(y);
   }
-  if (!isLoaded) return <div> <img src={loader} alt="Loading..." /> </div>;
+  if (!isLoaded && !loading)
+    return (
+      <div>
+        {" "}
+        <img src={loader} alt="Loading..." />{" "}
+      </div>
+    );
 
   return (
     <>
       <div className="productMain_parent">
         <div class="productMain_left">
           <div className="productMain-img" id="productMain-il">
-            { (window.innerWidth) > 450 ? 
+            {window.innerWidth > 450 ? (
               <SideBySideMagnifier
                 fillAvailableSpace={true}
                 imageSrc={currentImage}
                 imageAlt="Example"
                 largeImageSrc={currentZoomedImage} // Optional
-              /> 
-              :
+              />
+            ) : (
               <img src={currentImage} />
-            }
+            )}
           </div>
           <div className="productMain-divSmall">
             <img
               className="productMain-imgSmall"
               id="productMain-is1"
               // src="https://firebasestorage.googleapis.com/v0/b/dmsne-test.appspot.com/o/categories%2Fprinting_services%2Fpillow2.jpg?alt=media&token=a58a3a03-c9ff-43e3-a12e-823ab5909861"
-              src = {data.img}
+              src={data.img}
               onClick={() =>
                 changeImage(
                   // "https://firebasestorage.googleapis.com/v0/b/dmsne-test.appspot.com/o/categories%2Fprinting_services%2Fpillow2.jpg?alt=media&token=a58a3a03-c9ff-43e3-a12e-823ab5909861"
@@ -100,7 +126,7 @@ console.log(data);
               className="productMain-imgSmall"
               id="productMain-is2"
               // src="https://img2.exportersindia.com/product_images/bc-full/2018/12/5968895/paper-cutter-1544000488-4534647.jpeg"
-              src = {data.img2}
+              src={data.img2}
               onClick={() =>
                 changeImage(
                   // "https://img2.exportersindia.com/product_images/bc-full/2018/12/5968895/paper-cutter-1544000488-4534647.jpeg"
@@ -112,7 +138,7 @@ console.log(data);
               className="productMain-imgSmall"
               id="productMain-is3"
               // src="https://rukminim1.flixcart.com/image/352/352/jmqmpow0/paper-cutter/t/4/u/guillotine-12-inch-a4-size-guillotine-paper-cutter-loggas-original-imaf9ht8qcfdkvty.jpeg?q=70"
-              src = {data.img3}
+              src={data.img3}
               onClick={() =>
                 changeImage(
                   // "https://rukminim1.flixcart.com/image/352/352/jmqmpow0/paper-cutter/t/4/u/guillotine-12-inch-a4-size-guillotine-paper-cutter-loggas-original-imaf9ht8qcfdkvty.jpeg?q=70"
@@ -137,7 +163,8 @@ console.log(data);
                   {" "}
                   {data.total_ratings} Rating
                 </p>
-                <p className={'bar1'}
+                <p
+                  className={"bar1"}
                   style={{
                     textAlign: "center",
                     color: "#3858a2",
@@ -154,13 +181,28 @@ console.log(data);
             </div>
             <hr></hr>
             <h3 className="prod_desc_info">Product Description</h3>
+            {/* <p>mklmkknnn</p> */}
             <div className="prc-4thLine">
-              <p className="blueFont">
-                BRAND: <span>{data.brand}</span>
-              </p>
-              <p className="blueFont">
-                CATEGORY: <span>{data.category}</span>
-              </p>
+              {/* <p>kotkookkok</p> */}
+              {productDetails.map((val) => {
+                 <div className="blueFont-div">
+                 {/* <p>hghvvi</p> */}
+                  <p className="blueFont">
+                    {console.log(val)}
+                    {val}
+                  </p>
+                </div>
+              })}
+              {/* <div className="blueFont-div">
+                <p className="blueFont">
+                  BRAND: <span>{data.brand}</span>
+                </p>
+              </div>
+              <div className="blueFont-div">
+                <p className="blueFont">
+                  CATEGORY: <span>{data.category}</span>
+                </p>
+              </div> */}
             </div>
 
             <div className="productInfo">{data.product_desc}</div>
@@ -176,8 +218,10 @@ console.log(data);
               CONTACT US
             </button>
             <br></br>
-            <div className='ownerInfo-div'>
-              <p className={ownerInfo}>To Buy This Product contact: 7002280187 or 9435481533</p>
+            <div className="ownerInfo-div">
+              <p className={ownerInfo}>
+                To Buy This Product contact: 7002280187 or 9435481533
+              </p>
             </div>
           </div>
 
@@ -221,11 +265,10 @@ console.log(data);
           </div>
         </div>
       </div>
-      <Relatedproduct
+      {/* <Relatedproduct
         product_category={product_category}
         product_id={product_id}
-      />
-      {/* <Homepagemenu /> */}
+      /> */}
     </>
   );
 }
