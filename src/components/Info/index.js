@@ -34,10 +34,7 @@ function Info({ data, isLoaded }) {
     {
         newArr.push(productDetailsKey[i]+" :  "+productDetailsValue[i]+ "");
     }
-    console.log(newArr)
-
     setproductDetails(newArr);
-    console.log(data);
     setloading(true);
   }, [data])
   
@@ -184,15 +181,13 @@ function Info({ data, isLoaded }) {
             {/* <p>mklmkknnn</p> */}
             <div className="prc-4thLine">
               {/* <p>kotkookkok</p> */}
-              {productDetails.map((val) => {
-                 <div className="blueFont-div">
-                 {/* <p>hghvvi</p> */}
-                  <p className="blueFont">
-                    {console.log(val)}
-                    {val}
-                  </p>
-                </div>
-              })}
+              {productDetails.map(val => 
+                  <div className="blueFont-div">
+                          <p className="blueFont">
+                            {val}
+                          </p>
+                  </div>
+              )}
               {/* <div className="blueFont-div">
                 <p className="blueFont">
                   BRAND: <span>{data.brand}</span>

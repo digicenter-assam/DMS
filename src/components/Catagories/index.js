@@ -2,14 +2,22 @@ import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from "./SidebarData";
 import "./index.css";
 import { IconContext } from "react-icons";
+import { SidebarData } from "./../../utilities/SidebarData";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  const showSevenCategory=()=>{
+    return SidebarData.map((element,i)=>{
+      if(i<7)
+      return  <Link className="linkStyle" to={element.path}>
+      <p className="display-catagories">{element.title}</p>
+    </Link>
+    })
+  }
 
   return (
     <>
@@ -23,27 +31,9 @@ function Navbar() {
             <div className="triangle"></div>
           </div>
 
-          <Link className="linkStyle" to="/listing/Printing Material">
-            <p className="display-catagories">Printing Material</p>
-          </Link>
-          <Link className="linkStyle" to="/listing/Printing Service">
-            <p className="display-catagories">Printing Services</p>
-          </Link>
-          <Link className="linkStyle" to="/listing/machinary">
-            <p className="display-catagories">Printing Machinary</p>
-          </Link>
-          <Link className="linkStyle" to="/listing/clothing">
-            <p className="display-catagories">Clothing</p>
-          </Link>
-          <Link className="linkStyle" to="/listing/electronic">
-            <p className="display-catagories">Electronics</p>
-          </Link>
-          <Link className="linkStyle" to="/listing/hardware">
-            <p className="display-catagories">IT & Computer Acessories</p>
-          </Link>
-          <Link to="/Web/">
-            <a className="display-catagories">Web & App Development</a>
-          </Link>
+          {
+              showSevenCategory()
+          }
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>

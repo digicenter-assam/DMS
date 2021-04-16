@@ -3,7 +3,7 @@ import Card from "../Reusable/Product Card/Card";
 import { Link } from "react-router-dom";
 import loader from '../../assets/loading-200px.gif';
 
-function Products({items,isLoaded,props}) {
+function Products({category,items,isLoaded,props}) {
 
     window.scrollTo({ top: 0, behavior: "smooth" });
     // window.scrollTo({top: 0, behavior: 'auto'});
@@ -17,7 +17,7 @@ function Products({items,isLoaded,props}) {
         <>
            <div className='products'>
            {items.map(element=>
-                <Link to={`/info/${element.category}/${element.id}`} key={element.id} >
+                <Link to={`/info/${category}/${element.id}`} key={element.id} >
                     <Card name={element.name} img={element.img} />
                 </Link>
            )}
