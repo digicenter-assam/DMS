@@ -16,6 +16,18 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
+    title: 'Printing Services',
+    path: '/listing/printing services',
+    icon: <FcIcons.FcPrint />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Photo Frame',
+    path: '/listing/photo frame',
+    // icon: <FcIcons.FcElectronics />,
+    cName: 'nav-text'
+  },
+  {
     title: 'UV Printing Machine',
     path: '/listing/uv printing machine',
     // icon: <FcIcons.FcElectronics />,

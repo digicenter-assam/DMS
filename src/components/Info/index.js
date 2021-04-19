@@ -184,25 +184,16 @@ function Info({ category, data, isLoaded }) {
                           </p>
                   </div>
               )}
-              {/* <div className="blueFont-div">
-                <p className="blueFont">
-                  BRAND: <span>{data.brand}</span>
-                </p>
-              </div>
-              <div className="blueFont-div">
-                <p className="blueFont">
-                  CATEGORY: <span>{data.category}</span>
-                </p>
-              </div> */}
             </div>
 
             <div className="productInfo">{data.product_desc}</div>
 
-            <p className="originalPrice">
+            {/* <p className="originalPrice">
               M.R.P : &nbsp; &nbsp;<del>{data.mrp}</del>{" "}
-            </p>
+            </p> */}
             <p className="ourPrice">
-              Our Price: RS 899 <span>({data.offer}% OFF)</span>
+              This product is available at <span>wholesale</span> price.
+              {/* Our Price: RS 899 <span>({data.offer}% OFF)</span> */}
             </p>
 
             <button className="btnContactUs" onClick={ownerinfoFun}>
@@ -256,10 +247,10 @@ function Info({ category, data, isLoaded }) {
           </div>
         </div>
       </div>
-      <Relatedproduct
+      {/* <Relatedproduct
         product_category={category}
         product_id={data.id}
-      />
+      /> */}
     </>
   );
 }
