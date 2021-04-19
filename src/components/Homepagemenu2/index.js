@@ -48,10 +48,10 @@ function Homepagemenu2() {
                                     <BsIcons.BsDash />
                                 </IconContext.Provider>
                             </span>
-                            IT & COMPUTER ACCESSORIES
+                            SUBLIMATION T-SHIRT
                         </p>
                     </div>
-                    <p className='menu-view2'><Link className="linkStyle" to="/listing/hardware">View All</Link><span>
+                    <p className='menu-view2'><Link className="linkStyle" to="/listing/sublimation tshirt">View All</Link><span>
                         <IconContext.Provider value={{ color: "#32436b", size: "25px" }}>
                             <FiIcons.FiArrowRight />
                         </IconContext.Provider>
@@ -66,7 +66,7 @@ function Homepagemenu2() {
                             <p>{items[product_1 - 1].name}</p>
                         </div>
                         <div className='manu-product-btn2'>
-                        <Link to={`/info/hardware/${product_1}`}>
+                        <Link to={`/info/sublimation tshirt/${product_1}`}>
                             <button className='menu-btn2'>VIEW NOW</button>
                             </Link>
                         </div>
@@ -81,7 +81,7 @@ function Homepagemenu2() {
                             <p>{items[product_2 - 1].name}</p>
                         </div>
                         <div className='manu-product-btn2'>
-                        <Link to={`/info/hardware/${product_2}`}>
+                        <Link to={`/info/sublimation tshirt/${product_2}`}>
                             <button className='menu-btn2'>VIEW NOW</button>
                             </Link>
                         </div>
@@ -96,7 +96,7 @@ function Homepagemenu2() {
                             <p>{items[product_3 - 1].name}</p>
                         </div>
                         <div className='manu-product-btn2'>
-                        <Link to={`/info/hardware/${product_3}`}>
+                        <Link to={`/info/sublimation tshirt/${product_3}`}>
                             <button className='menu-btn2'>VIEW NOW</button>
                             </Link>
                         </div>
@@ -111,7 +111,7 @@ function Homepagemenu2() {
                         {items[product_4 - 1].name}
                         </div>
                         <div className='manu-product-btn2'>
-                        <Link to={`/info/hardware/${product_4}`}>
+                        <Link to={`/info/sublimation tshirt/${product_4}`}>
                             <button className='menu-btn2'>VIEW NOW</button>
                             </Link>
                         </div>

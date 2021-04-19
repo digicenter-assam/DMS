@@ -26,40 +26,40 @@ function Ourservices() {
         <Link className="div-left" to="/listing/hardware">
           {/* <div className=''> */}
           <div className="service-dec">
-            <p>LIVING IN COLORS</p>
+            <p>PRINTING SERVICES</p>
           </div>
           {/* </div> */}
         </Link>
         <div className="div-right">
           <div className="div-top">
-            <Link className="div-top-left" to="/listing/hardware">
+            <Link className="div-top-left" to="/listing/photo and plate">
               {/* <div className='div-top-left'> */}
               <div className="service-dec">
-                <p>LIVING IN COLORS</p>
+                <p>PHOTO AND PLATE</p>
               </div>
               {/* </div> */}
             </Link>
-            <Link className="div-top-right" to="/listing/hardware">
+            <Link className="div-top-right" to="/listing/sublimation tiles">
               {/* <div className='div-top-right'> */}
               <div className="service-dec">
-                <p>LIVING IN COLORS</p>
+                <p>SUBLIMATION TILES</p>
               </div>
               {/* </div> */}
             </Link>
           </div>
           <div className="div-bottom">
-            <Link className="div-bottom-left" to="/listing/hardware">
+            <Link className="div-bottom-left" to="/listing/cushion">
               {/* <div className='div-bottom-left'> */}
               <div className="service-dec">
-                <p>LIVING IN COLORS</p>
+                <p>CUSHION</p>
               </div>
               {/* </div> */}
             </Link>
-            <Link className="div-bottom-right" to="/listing/hardware">
+            <Link className="div-bottom-right" to="/listing/sublinova sublimation ink">
               {/* <div className='div-bottom-right'> */}
 
               <div className="service-dec">
-                <p>LIVING IN COLORS</p>
+                <p>SUBLINOVA SUBLIMATION INK</p>
               </div>
 
               {/* </div> */}

@@ -81,7 +81,7 @@
     width: 40%;
     height: 280px;
     margin-right: 2rem;
-    background-image: url(../../assets/Packaging\ Materials.png);
+    background-image: url(../../assets/plate.jpg);
     background-size: cover;
 }
 
@@ -90,7 +90,7 @@
     align-items: flex-end;
     width: 55%;
     height: 280px;
-    background-image: url(../../assets/Printing\ Books.png);
+    background-image: url(../../assets/tiles.jpg);
     background-size: cover;
 }
 
@@ -100,7 +100,7 @@
     width: 55%;
     height: 280px;
     margin-right: 2rem;
-    background-image: url(../../assets/Ideal\ Branding.png);
+    background-image: url(../../assets/cushion.jpg);
     background-size: cover;
 }
 
@@ -109,7 +109,7 @@
     align-items: flex-end;
     width: 40%;
     height: 280px;
-    background-image: url(../../assets/Brand\ Printing.png);
+    background-image: url(../../assets/ink.jpg);
     background-size: cover;
 }
 
