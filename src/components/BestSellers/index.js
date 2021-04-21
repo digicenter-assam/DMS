@@ -23,18 +23,18 @@ function BestSellerComponent() {
         </div>
         <div className="bestS_parent">
         <div className="bestS_childBottom_parent">
-          <Link  to="/searchListing/headphone" className="bestS_childBottom" id="bestS_headphone">
+          <Link  to="/listing/mug printing machine" className="bestS_childBottom" id="bestS_headphone">
             <div >
-              <p>
-                <strong> —— HEADPHONE</strong>
+              <p style={{fontSize:".9rem"}}>
+                <strong> —— MUG PRINTING MACHINE</strong>
               </p>
             </div>
           </Link>
 
-          <Link  className="bestS_childBottom2" id="bestS_pccase" to="/searchListing/cabinet">
+          <Link  className="bestS_childBottom2" id="bestS_pccase" to="/listing/tshirt printing machine">
             <div >
-              <p>
-                <strong> —— PC CASE</strong>
+              <p className="second-pro" style={{fontSize:"1.1rem", marginBottom:"8rem", marginLeft:"23rem", color:"black"}}>
+                <strong> —— T-SHIRT PRINTING MACHINE</strong>
               </p>
             </div>
           </Link>
