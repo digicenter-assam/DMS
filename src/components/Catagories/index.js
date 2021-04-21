@@ -27,7 +27,7 @@ function Navbar() {
             <Link to="#" className="menu-bars">
               <FaIcons.FaBars onClick={showSidebar} />
             </Link>
-            <p className="catagories-desc">See all Catagories</p>
+            <p className="catagories-desc">See all Categories</p>
             <div className="triangle"></div>
           </div>
 
