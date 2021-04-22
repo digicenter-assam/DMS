@@ -28,35 +28,35 @@ export default function FooterComponent() {
           </div>
           <div className="footer_child1">
             <p className="footer_child1_heading">Popular Categories</p>
-            <Link  to="/searchListing/headphone">
-              <p className='footer-product'>Coats</p>
+            <Link  to="/listing/sublimation cushion">
+              <p className='footer-product'>Sublimation Cushion</p>
             </Link>
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Jeans</p>
-            </Link>
-            
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Tops</p>
+            <Link  to="/listing/sublinova sublimation ink">
+            <p className='footer-product'>Sublinova Sublimation Ink</p>
             </Link>
             
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Sweaters</p>
+            <Link  to="/listing/lamination machine">
+            <p className='footer-product'>Lamination Machine</p>
             </Link>
             
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Jackets</p>
+            <Link  to="/listing/badge machine">
+            <p className='footer-product'>Badge Machine</p>
             </Link>
             
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Book Cover Printing</p>
+            <Link  to="/listing/lanyard machine">
+            <p className='footer-product'>Lanyard Machine</p>
             </Link>
             
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Brand Printing</p>
+            <Link  to="/listing/wall clock">
+            <p className='footer-product'>Wall Clock</p>
             </Link>
             
-            <Link  to="/searchListing/headphone">
-            <p className='footer-product'>Business Card Printing</p>
+            <Link  to="/listing/sublimation tiles">
+            <p className='footer-product'>Sublimation Tiles</p>
+            </Link>
+            
+            <Link  to="/listing/cushion">
+            <p className='footer-product'>Cushion</p>
             </Link>
             
           </div>
@@ -76,9 +76,13 @@ export default function FooterComponent() {
         </div>
 
         <div className="footer_parent2">
+        
           <div className="footer_child2">
-            © 2021, Made with ❤️ by Digicenter Assam
+
+            <p>© 2021, Made with ❤️ by <a href="https://www.digicenterassam.com">Digicenter Assam</a></p>
+        
           </div>
+        
           <div
             className="footer_child2"
             style={{
