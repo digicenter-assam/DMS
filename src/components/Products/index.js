@@ -7,8 +7,6 @@ function Products({category,items,isLoaded,props}) {
 
     window.scrollTo({ top: 0, behavior: "smooth" });
     // window.scrollTo({top: 0, behavior: 'auto'});
-    console.log(props.location.pathname.split("/")[2]);
-
     if(!isLoaded)
         return (<div className='loader'> <img src={loader} alt="Loading..." /> </div>)
     if(items.length === 0)
@@ -22,7 +20,7 @@ function Products({category,items,isLoaded,props}) {
                 </Link>
            )}
                {/*
-               
+
                <div className='product-wrapper'>
                    <div className='product-top'>
                        <div className='product-label'>
@@ -47,7 +45,7 @@ function Products({category,items,isLoaded,props}) {
                             <button className='btn'>View Now</button>
                        </div>
                    </div>
-               </div> */}
+               </div> */ }
            </div> 
         </>
     )
