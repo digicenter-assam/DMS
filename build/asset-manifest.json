@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.03d5ddbf.chunk.css",
-    "main.js": "/static/js/main.141aa032.chunk.js",
-    "main.js.map": "/static/js/main.141aa032.chunk.js.map",
+    "main.css": "/static/css/main.494a76e8.chunk.css",
+    "main.js": "/static/js/main.b4077d40.chunk.js",
+    "main.js.map": "/static/js/main.b4077d40.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19b5134f.js",
     "runtime-main.js.map": "/static/js/runtime-main.19b5134f.js.map",
     "static/js/2.2ea84bc2.chunk.js": "/static/js/2.2ea84bc2.chunk.js",
     "static/js/2.2ea84bc2.chunk.js.map": "/static/js/2.2ea84bc2.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.03d5ddbf.chunk.css.map": "/static/css/main.03d5ddbf.chunk.css.map",
+    "static/css/main.494a76e8.chunk.css.map": "/static/css/main.494a76e8.chunk.css.map",
     "static/js/2.2ea84bc2.chunk.js.LICENSE.txt": "/static/js/2.2ea84bc2.chunk.js.LICENSE.txt",
     "static/media/Banner-Keyboard2.fbce1f1b.png": "/static/media/Banner-Keyboard2.fbce1f1b.png",
     "static/media/Banner-cabinet CPU.6d060b91.png": "/static/media/Banner-cabinet CPU.6d060b91.png",
     "static/media/Banner-hard drive.a541c503.png": "/static/media/Banner-hard drive.a541c503.png",
     "static/media/Banner-monitor.c0af50c1.png": "/static/media/Banner-monitor.c0af50c1.png",
     "static/media/index.css": "/static/media/tiles.8ed538a3.jpg",
-    "static/media/banner1.ff213fe1.jpg": "/static/media/banner1.ff213fe1.jpg",
-    "static/media/banner2.1342f434.jpg": "/static/media/banner2.1342f434.jpg",
-    "static/media/banner3.145afe45.jpg": "/static/media/banner3.145afe45.jpg",
+    "static/media/banner4.0c968375.jpg": "/static/media/banner4.0c968375.jpg",
+    "static/media/banner5.33766607.jpg": "/static/media/banner5.33766607.jpg",
+    "static/media/banner6.f41b2ff6.jpg": "/static/media/banner6.f41b2ff6.jpg",
     "static/media/best-android-development.9b5d4d67.jpg": "/static/media/best-android-development.9b5d4d67.jpg",
     "static/media/burnfitness.e829a999.png": "/static/media/burnfitness.e829a999.png",
     "static/media/capFinal.d6425e22.png": "/static/media/capFinal.d6425e22.png",
@@ -32,7 +32,6 @@
     "static/media/loading-200px.199e02ef.gif": "/static/media/loading-200px.199e02ef.gif",
     "static/media/paper cutter1.d409dd43.jpg": "/static/media/paper cutter1.d409dd43.jpg",
     "static/media/paper cutter_min.47a3c6d1.jpg": "/static/media/paper cutter_min.47a3c6d1.jpg",
-    "static/media/BestSellerComponent.css": "/static/media/pexels-xxss-is-back-777001.c69b73de.jpg",
     "static/media/printing paper.e95a38e3.png": "/static/media/printing paper.e95a38e3.png",
     "static/media/product.898ede40.svg": "/static/media/product.898ede40.svg",
     "static/media/product1.520b804d.png": "/static/media/product1.520b804d.png",
@@ -42,7 +41,7 @@
   "entrypoints": [
     "static/js/runtime-main.19b5134f.js",
     "static/js/2.2ea84bc2.chunk.js",
-    "static/css/main.03d5ddbf.chunk.css",
-    "static/js/main.141aa032.chunk.js"
+    "static/css/main.494a76e8.chunk.css",
+    "static/js/main.b4077d40.chunk.js"
   ]
 }
